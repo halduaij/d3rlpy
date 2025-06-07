@@ -18,3 +18,4 @@ from .rebrac import *
 from .sac import *
 from .td3 import *
 from .td3_plus_bc import *
+from .s2dc_iql import *

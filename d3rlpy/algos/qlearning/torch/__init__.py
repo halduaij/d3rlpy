@@ -14,3 +14,4 @@ from .rebrac_impl import *
 from .sac_impl import *
 from .td3_impl import *
 from .td3_plus_bc_impl import *
+from .discrete_iql_impl import DiscreteIQLImpl, DiscreteIQLModules

@@ -297,9 +297,8 @@ class StandardRewardScaler(RewardScaler):
             ).rewards
             for episode in episodes
         ]
-        flat_rewards = np.concatenate(rewards)
-        self.mean = float(np.mean(flat_rewards))
-        self.std = float(np.std(flat_rewards))
+        self.mean = float(np.mean(rewards))
+        self.std = float(np.std(rewards))
 
     def transform(self, x: torch.Tensor) -> torch.Tensor:
         assert self.built
